@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a9cc2d403e.js" crossorigin="anonymous"></script>
+    <title>Hamburger Menu</title>
+    
+</head>
+<body>
+
+    <div class="container">
+        <div class="menu-btn">
+            <div class="icon"></div>
+        </div>
+        <div class="menutitle">
+            <p>Menu</p>
+        </div>
+        <ul class="menuitems">
+            <li><a href="#"><i class="fa-solid fa-user"></i>    Profile</a></li>
+            <li><a href="#"><i class="fa-solid fa-cart-shopping"></i>    My cart</a></li>
+            <li><a href="#"><i class="fa-solid fa-gear">    </i>Settings</a></li>
+            <li><a href="#"><i class="fa-solid fa-bag-shopping"></i>    Checkout</a></li>
+            <li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>    Logout</a></li>
+            <li><a href="#"><i class="fa-solid fa-circle-info"></i>    About</a></li>
+        </ul>
+    </div>
+
+    <div class="wm">
+        <h1>MaKe Arts</h1>
+    </div>
+    <script>
+        let container = document.querySelector('.container');
+        let menubtn = document.querySelector('.menu-btn');
+        console.log(container);
+        console.log(menubtn);
+        menubtn.onclick = function(){
+            container.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
